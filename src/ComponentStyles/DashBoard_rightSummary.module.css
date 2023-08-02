@@ -1,0 +1,217 @@
+.overall {
+  /* background-color:rgb(255, 255, 255); */
+}
+
+.ContainerCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(224, 210, 210, 0.5);
+  width: 80%;
+  max-width: 600px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border-radius: 24px;
+}
+
+.ContainerCard img {
+  width: 37px;
+  object-fit: contain;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.ordersContainer > img {
+  width: 3rem;
+  object-fit: contain;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+div p {
+  font-size: large;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.ContainerCard select {
+  padding: 0.5rem;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  background-color: white;
+  color: lightgray;
+  width: 100%;
+  max-width: 150px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  max-width: 100%;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+h1 {
+  text-align: left;
+  font-weight: 300px;
+  font-size: large;
+}
+
+.ordersContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.orders {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem;
+}
+
+.orderItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+p {
+  text-transform: capitalize;
+  font-size: large;
+  font-weight: 400;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+  left: 5rem;
+}
+
+.date :nth-child(2) {
+  color: rgb(229, 65, 19);
+}
+
+@media (max-width: 768px) {
+  .overall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .ContainerCard {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .up {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .down {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .ContainerCard img {
+    width: 27px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .main h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .ordersContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .orders {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+  }
+
+  .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+    .ContainerCard {
+      width: 95%;
+          padding: 1rem;
+    }
+
+  .main {
+    padding: 0.5rem;
+  }
+
+  .ordersContainer {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ContainerCard {
+    width: 90%;
+  }
+}

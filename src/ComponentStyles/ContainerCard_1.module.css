@@ -1,0 +1,58 @@
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 1rem;
+}
+.ContainerCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(224, 210, 210, 0.939);
+    width: 30%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+.up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+p {
+    font-size: large;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.ContainerCard select {
+    padding: 0.5rem;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+    color:lightgray;
+    width: 100%;
+    max-width: 150px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.up img{
+    object-fit: contain;
+    width: 40px;
+}

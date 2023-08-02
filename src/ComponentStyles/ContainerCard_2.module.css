@@ -1,0 +1,162 @@
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* left container styles */
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-start;
+    margin: 5px 0px 6rem 3px;
+}
+
+.barchart {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 100%, 99% 98% 0%);
+    width: 35%;
+    padding: 1rem 20px;
+    margin: 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.barchart img {
+    object-fit: contain;
+    width: 20rem;
+    ;
+}
+
+.barchart_heading {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 5px 5px 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+:where(.heading_up, .heading_down) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.heading_up h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: large;
+    font-weight: 400;
+    color: lightgrey;
+}
+
+.heading_up :nth-child(2) {
+    display: inline-flex;
+    margin-inline: 10rem;
+}
+
+/* summary styles */
+
+.ContainerCard_A {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30rem;
+    padding: 1rem 1rem 3px 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+    background-color: #5570F1;
+}
+
+.ContainerCard_B {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30rem;
+    padding: 1rem 1rem 3px 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+    background-color: rgba(224, 210, 210, 0.939);
+}
+
+.up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.down:nth-child(2) {
+    margin-right: 3rem;
+}
+
+p {
+    font-size: large;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+.ContainerCard select {
+    padding: 0.5rem;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+    color: lightgray;
+    width: 100%;
+    max-width: 150px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.up img {
+    object-fit: contain;
+    width: 40px;
+}
+
+.navbaHr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 4px 0px 6px;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+
+
+.selectContainer {
+    margin: 0 8px;
+    padding: 10px;
+}
+
+.selectContainer2 {
+    position: relative;
+    left: 580px;
+
+}

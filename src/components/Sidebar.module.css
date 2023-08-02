@@ -1,0 +1,37 @@
+/* Sidebar.css */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    /* Logo styles */
+}
+
+.menu-list {
+    /* Menu list styles */
+}
+
+.logout-button {
+    /* Logout button styles */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        /* Adjust the layout for smaller screens */
+        flex-direction: row;
+    }
+
+    .logo {
+        /* Adjust logo styles for smaller screens */
+    }
+
+    .menu-list {
+        /* Adjust menu list styles for smaller screens */
+    }
+
+    .logout-button {
+        /* Adjust logout button styles for smaller screens */
+    }
+}

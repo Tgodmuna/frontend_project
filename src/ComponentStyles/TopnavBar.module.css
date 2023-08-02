@@ -1,0 +1,34 @@
+.profilepic {
+    object-fit: contain;
+}
+
+.Topnav {
+    width: 100%;
+    max-width: 100%;
+}
+
+.Navcontainer {
+    width: 100%;
+    gap: 50rem;
+    margin: 1rem;
+    max-width: auto;
+    min-width: auto;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .Topnav {
+        padding: 1rem 0;
+    }
+
+    .Navcontainer {
+        gap: 1rem;
+    }
+
+    .Childnav2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        /* Adjust the gap between child elements */
+    }
+}
