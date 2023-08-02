@@ -16,7 +16,7 @@ Before running the Admin Dashboard code, make sure you have the following instal
 
 Follow these steps to run the Admin Dashboard on your local machine:
 
-1. Clone the repository:  <https://github.com/your-username/admin-dashboard.git>
+1. Clone the repository:  <https://github.com/Tgodmuna/frontend_project.git>
 
 2. Install dependencies: styled-components
 
