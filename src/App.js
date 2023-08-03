@@ -6,7 +6,6 @@ import MainContainer from "./components/MainContainer";
 import TopNavBar from "./components/TopNavBar";
 import Main_cards_container from "./components/Main_cards_container";
 import DashBoard_rightSummary from "./components/DashBoard_rightSummary";
-import Figmastyle from "./components/Figmastyle";
 export const Datacontext = React.createContext();
 
 function App() {

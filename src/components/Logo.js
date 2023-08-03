@@ -8,8 +8,9 @@ const Logo = () => {
         <div
           className={styles.Logo_icon}
           id={""}
-          style={{ width: 43.33, height: 43.33, position: "relative" }}>
-          <img src='/assets/Graph.svg' alt='graph' />
+          style={{ width: 43.33, height: 43.33, position: "relative" }}
+        >
+          <img src="/assets/Graph.svg" alt="graph" />
         </div>
 
         <div className={styles.Logo_Title} id={"Logo_title"}>
