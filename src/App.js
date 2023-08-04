@@ -38,7 +38,7 @@ function App() {
   return (
     <Datacontext.Provider value={barchart}>
       <div className='App'>
-        <DashBoard/>
+        <Sidebar/>
       </div>
     </Datacontext.Provider>
   );
