@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import "./App.css";
 import React, { useState } from "react";
 import DashBoard from "./components/DashBoard";
@@ -6,6 +7,7 @@ import MainContainer from "./components/MainContainer";
 import TopNavBar from "./components/TopNavBar";
 import Main_cards_container from "./components/Main_cards_container";
 import DashBoard_rightSummary from "./components/DashBoard_rightSummary";
+import ContainerCard_2 from "./components/ContainerCard_2";
 export const Datacontext = React.createContext();
 
 function App() {
@@ -30,15 +32,15 @@ function App() {
     { week: "Thu", value: 30 },
     { week: "Fri", value: 90 },
     { week: "Sat", value: 60 },
-    { week: "1day ago", value: 60 },
-    { week: "2days ago", value: 34 },
+    { week: "1d ", value: 60 },
+    { week: "2d ", value: 34 },
   ]);
 
   //API context wrapper
   return (
     <Datacontext.Provider value={barchart}>
       <div className='App'>
-        <DashBoard/>
+        <Sidebar/>
       </div>
     </Datacontext.Provider>
   );

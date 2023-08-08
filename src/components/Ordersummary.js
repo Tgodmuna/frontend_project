@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import styles from "../ComponentStyles/OrderSummary.module.css";
 import { Datacontext } from "../App";
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import Tooltip from "./Tooltip";
 
 const BarChart = () => {
   const data = useContext(Datacontext);
-  const maxValue = Math.max(...data.map((item) => item.value));
   const [hoveredValue, setHoveredValue] = useState(null);
+
+  const maxValue = useMemo(() => {
+    return Math.max(...data.map((item) => item.value));
+  }, [data]);
 
   const handleBarHover = (value, week) => {
     setHoveredValue({ value, week });
@@ -24,10 +27,7 @@ const BarChart = () => {
           onMouseLeave={() => handleBarHover(null)}>
           <div className={styles["bar-label"]}>{item.week}</div>
           {hoveredValue && hoveredValue.value === item.value && (
-            <Tooltip
-              value={hoveredValue.value}
-              week={hoveredValue.week}
-            />
+            <Tooltip value={hoveredValue.value} week={hoveredValue.week} />
           )}
         </div>
       ))}
@@ -35,4 +35,4 @@ const BarChart = () => {
   );
 };
 
-export default BarChart;
+export default React.memo(BarChart);

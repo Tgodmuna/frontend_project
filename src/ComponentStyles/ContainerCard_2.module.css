@@ -3,13 +3,7 @@
     flex-direction: row;
 }
 
-/* left container styles */
-.left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .top {
     display: flex;
@@ -158,5 +152,25 @@ p {
 .selectContainer2 {
     position: relative;
     left: 580px;
-
+}
+@media screen and (max-width:480px) {
+   .navbaHr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 4px 0px 6px;
+    background-color: #f2f2f2;
+    width: fit-content;
+    margin: auto;
+    padding: 0px 15px 0px 15px;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.selectContainer2 {
+    position: relative;
+    left: 5px;
+}
 }

@@ -2,31 +2,22 @@ import React, { useState } from "react";
 import Sidebar from "./Sidebar";
 import MainContainer from "./MainContainer";
 import "../ComponentStyles/DashBoard.css";
+import Main_cards_container from "./Main_cards_container";
 
 const DashBoardStyles = {
   display: "flex",
   flexDirection: "row",
   backgroundColor: "#FAF5FA",
+  padding:'0 0 25rem 0'
   // width: "135rem",
 };
 
 const Dashboard = () => {
-  const [showSidebar, setShowSidebar] = useState(true);
-
-  const toggleSidebar = () => {
-    setShowSidebar(!showSidebar);
-  };
-
   return (
     <div className='dashboard-container' style={DashBoardStyles}>
-      <div
-        className={`hamburger-icon ${showSidebar ? "hidden" : ""}`}
-        onClick={ toggleSidebar }>
-        |||
-      </div>
-      {showSidebar && <Sidebar />}
+       <Sidebar />
       <div className='center-component'>
-        <MainContainer />
+        <Main_cards_container />
       </div>
     </div>
   );

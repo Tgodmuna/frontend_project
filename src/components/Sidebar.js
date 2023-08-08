@@ -1,12 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./Logo";
 import MenuItems from "./Menu_items";
 import Bottom from "./Bottom";
 
 const Sidebar = () => {
- 
-// side bar style
-  const sidebarStyle = { 
+  const [showSideBar, setShowSideBar] = useState(false);
+
+  // Toggle the sidebar visibility
+  const toggleSidebar = () => {
+    setShowSideBar(!showSideBar);
+  };
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      if (window.innerWidth <= 481) {
+        setShowSideBar(false);
+      } else {
+        setShowSideBar(true);
+      }
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  // Sidebar style
+  const sidebarStyle = {
     width: 296,
     height: 1024,
     position: "relative",
@@ -17,16 +40,20 @@ const Sidebar = () => {
     display: "flex",
   };
 
-  
+  // Render sidebar content conditionally based on showSideBar state
+  const sidebarContent = showSideBar && (
+    <div className='max-sm:bg-slate-600 ' style={sidebarStyle}>
+      <Logo />
+      <MenuItems />
+      <Bottom />
+    </div>
+  );
 
   return (
-    <div style={sidebarStyle}>
-      
-          <Logo />
-          <MenuItems />
-          <Bottom />
-      
-    </div>
+    <>
+      <button onClick={toggleSidebar}>Toggle Sidebar</button>
+      {sidebarContent}
+    </>
   );
 };
 

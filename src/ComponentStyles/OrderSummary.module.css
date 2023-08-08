@@ -37,6 +37,10 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 13px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 .tooltip {
@@ -58,4 +62,48 @@
 }
 
 .bar:hover .tooltip {
-    display: block;}
+    display: block;
+}
+
+@media screen and (max-width:480px) {
+    .bar-chart {
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .bar {
+        margin-inline: 1rem;
+    }
+
+    .bar-label {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-40%);
+        font-size: 13px;
+        -webkit-transform: translateX(-40%);
+        -moz-transform: translateX(-40%);
+        -ms-transform: translateX(-40%);
+        -o-transform: translateX(-40%);
+}
+
+    .tooltip {
+        position: absolute;
+        bottom: calc(100% + 5px);
+        left:5px;
+        transform: translateX(-50%);
+        padding: 0.5rem;
+        background-color: #007bff;
+        color: white;
+        display: none;
+        border-radius: 10px;
+        font-size: 15px;
+        white-space: nowrap;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        z-index: 4;
+    }
+}

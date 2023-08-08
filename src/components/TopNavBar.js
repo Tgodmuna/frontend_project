@@ -3,7 +3,6 @@ import styles from "../ComponentStyles/TopnavBar.module.css";
 
 const TopNavBar = () => {
   return (
-    <div>
       <div className={styles.Topnav}>
         <div
           className={styles.Navcontainer}
@@ -12,6 +11,7 @@ const TopNavBar = () => {
             justifyContent: "space-between",
             alignItems: "center",
             display: "inline-flex",
+            width: '100%',
           }}>
           {/* child nav1 */}
           <div
@@ -107,7 +107,6 @@ const TopNavBar = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
